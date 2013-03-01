@@ -1,0 +1,7 @@
+(defun f(a b c) 
+	(if (and (<= a b) (<= a c))
+	  	(+ b c)	
+		(if (and (<= b a) (<= b c))
+		  	(+ a c)	
+			(+ a b)))
+	)
